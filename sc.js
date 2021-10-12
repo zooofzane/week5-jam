@@ -126,6 +126,18 @@ float n = min(n1,n2);
 `;
 
 
+// async main() {
+//     ...
+//     const vertex_shader_source = await fetch(canvas.dataset.vert).then(r => r.text());
+
+//     const vertex_shader = gl.createShader(gl.VERTEX_SHADER);
+//     gl.shaderSource(vertex_shader, vertex_shader_source);
+//     gl.compileShader(vertex_shader);
+//     ...
+// }
+
+
+
 let s = false;
 let a = 1.;
 document.addEventListener('keydown',function(){
