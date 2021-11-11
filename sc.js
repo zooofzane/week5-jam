@@ -121,7 +121,8 @@ float cnoise(vec3 P)
         float n1 = cnoise(vec3(vec2(gl_FragCoord.xy/100.),u_time*u_speed))+.3;
         float n2 = cnoise(vec3(vec2(gl_FragCoord.xy/10.),dis))+.3;
 float n = min(n1,n2);
-      gl_FragColor = vec4(vec3(n),1.);
+vec3 coll = mix(vec3(1.,1.,1.),vec3(.9,.8,.3),1.-n);
+      gl_FragColor = vec4(coll,1.);
     }
 `;
 
